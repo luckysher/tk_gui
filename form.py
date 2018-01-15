@@ -8,7 +8,13 @@ class Form(Tk):
         self.tk = Tk()
         print("Form  class")
 
+
+    def arangeComponents(self):
+        self.frame()
+
     def run(self):
+        self.arangeComponents()
         self.mainloop()
+
 
 
