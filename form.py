@@ -23,10 +23,12 @@ class Form(Tk):
         return frm
 
 
+    def addTextField(self, master, col, row):
+        tfName = Entry(master, fg="black")
+
     def addLabel(self, master, col, row, text):
         lblName = Label(master, text=text, fg="black")
         lblName.config(width=20, height=2, font="Sans-serif, 17")
-
 
     # method for arranging various component
     def arangeComponents(self):
