@@ -29,6 +29,7 @@ class Form(Tk):
 
         # add Button
         bt = Button(frm, text="Submit", fg="black")
+        bt.config(font="Sans-serif, 15", width=20, height=2)
         bt.grid(columnspan=5, row=6)
 
     # Run method for running form
