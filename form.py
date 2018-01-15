@@ -23,6 +23,10 @@ class Form(Tk):
         return frm
 
 
+    def addLabel(self, master, col, row, text):
+        lblName = Label(master, text=text, fg="black")
+        lblName.grid(column=col, row=row, padx=100, pady=40)
+
     # method for arranging various component
     def arangeComponents(self):
         frm = self.frame()
