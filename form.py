@@ -27,6 +27,11 @@ class Form(Tk):
     def arangeComponents(self):
         frm = self.frame()
 
+        # Add Label
+        self.addLabel(frm, col=0, row=2, text="Name")
+
+
+
         # add Button
         bt = Button(frm, text="Submit", fg="black")
         bt.config(font="Sans-serif, 15", width=20, height=2)
