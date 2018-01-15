@@ -8,4 +8,7 @@ class Form(Tk):
         self.tk = Tk()
         print("Form  class")
 
+    def run(self):
+        self.mainloop()
+
 
