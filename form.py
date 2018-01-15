@@ -22,9 +22,14 @@ class Form(Tk):
         frm.pack(fill=BOTH)
         return frm
 
+
     # method for arranging various component
     def arangeComponents(self):
         frm = self.frame()
+
+        # add Button
+        bt = Button(frm, text="Submit", fg="black")
+        bt.grid(columnspan=5, row=6)
 
     # Run method for running form
     def run(self):
