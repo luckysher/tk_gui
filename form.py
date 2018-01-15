@@ -25,6 +25,7 @@ class Form(Tk):
 
     def addTextField(self, master, col, row):
         tfName = Entry(master, fg="black")
+        tfName.config(width=20, font="Sans-serif, 30")
 
     def addLabel(self, master, col, row, text):
         lblName = Label(master, text=text, fg="black")
