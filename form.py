@@ -7,6 +7,7 @@
 # imports for various components from TK
 from Tkinter import *
 
+
 # Form class
 class Form(Tk):
 
@@ -17,12 +18,13 @@ class Form(Tk):
 
     # frame for handling various components
     def frame(self):
-        frm = Frame(self, width=900, height=500, bg="green")
-        frm.pack()
+        frm = Frame(self, width=500, height=700, bg="green")
+        frm.pack(fill=BOTH)
+        return frm
 
     # method for arranging various component
     def arangeComponents(self):
-        self.frame()
+        frm = self.frame()
 
     # Run method for running form
     def run(self):
