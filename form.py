@@ -22,7 +22,6 @@ class Form(Tk):
         frm.pack(fill=BOTH)
         return frm
 
-
     def addTextField(self, master, col, row):
         tfName = Entry(master, fg="black")
         tfName.config(width=20, font="Sans-serif, 30")
@@ -31,9 +30,16 @@ class Form(Tk):
         lblName = Label(master, text=text, fg="black")
         lblName.config(width=20, height=2, font="Sans-serif, 17")
 
+    def formHeading(self, master, row, heading_text):
+        heading = Label(master, text=heading_text, fg="black")
+        heading.config(width=20, height=2, font="Sans-serif, 19")
+
     # method for arranging various component
     def arangeComponents(self):
         frm = self.frame()
+
+        # Add form main heading
+        self.formHeading(frm, 1, "Student Form Demo")
 
         # Add Label
         self.addLabel(frm, col=0, row=2, text="Name")
@@ -50,7 +56,7 @@ class Form(Tk):
         # add Button
         bt = Button(frm, text="Submit", fg="black")
         bt.config(font="Sans-serif, 15", width=20, height=2)
-        bt.grid(columnspan=5, row=6)
+
 
     # Run method for running form
     def run(self):
