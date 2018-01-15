@@ -18,7 +18,8 @@ class Form(Tk):
 
     # frame for handling various components
     def frame(self):
-        frm = Frame(self, width=500, height=700, bg="green")
+        frm = Frame(self, width=600, height=700, highlightcolor="yellow", highlightthickness=5)
+        self.tk.title("Student Form DEMO\t\t\t\t\t\t\t")
         frm.pack(fill=BOTH)
         return frm
 
@@ -28,7 +29,7 @@ class Form(Tk):
 
     def addLabel(self, master, col, row, text):
         lblName = Label(master, text=text, fg="black")
-        lblName.config(width=20, height=2, font="Sans-serif, 17")
+        lblName.config(width=10, height=2, font="Sans-serif, 17")
 
     def formHeading(self, master, row, heading_text):
         heading = Label(master, text=heading_text, fg="black")
@@ -45,18 +46,17 @@ class Form(Tk):
         self.addLabel(frm, col=0, row=2, text="Name")
 
         # Add text field
-        self.addTextField(frm, col=3, row=2)
+        self.addTextField(frm, col=1, row=2)
 
         # Add Label
         self.addLabel(frm, col=0, row=4, text="Age")
 
         # Add text field
-        self.addTextField(frm, col=3, row=4)
+        self.addTextField(frm, col=1, row=4)
 
         # add Button
         bt = Button(frm, text="Submit", fg="black")
         bt.config(font="Sans-serif, 15", width=20, height=2)
-
 
     # Run method for running form
     def run(self):
