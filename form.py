@@ -30,6 +30,9 @@ class Form(Tk):
         # Add Label
         self.addLabel(frm, col=0, row=2, text="Name")
 
+        # Add text field
+        self.addTextField(frm, col=3, row=2)
+
 
 
         # add Button
