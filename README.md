@@ -1,2 +1,2 @@
 # tk_gui
-TK INTER GUI in python for demo
+TK INTER GUI in Python for demo
