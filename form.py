@@ -36,6 +36,8 @@ class Form(Tk):
         # Add Label
         self.addLabel(frm, col=0, row=4, text="Age")
 
+        # Add text field
+        self.addTextField(frm, col=3, row=4)
 
         # add Button
         bt = Button(frm, text="Submit", fg="black")
